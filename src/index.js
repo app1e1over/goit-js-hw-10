@@ -30,9 +30,10 @@ function showError(){
 
 hideError();
 breedSelect.classList.add('hidden');
-console.log("var 1");
+console.log("var 2");
 fetchBreeds()
   .then(c => {
+    console.log(c);
     for (val of c) {
       let op = document.createElement('option');
 
@@ -52,7 +53,8 @@ fetchBreeds()
       }
     });
   })
-  .catch(() => {
+  .catch((e) => {
+    console.log(e);
     showError();
   });
 
