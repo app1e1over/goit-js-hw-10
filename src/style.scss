@@ -61,6 +61,7 @@ body {
 
   &:has(.error:not(.hidden)) {
     & .cat-info,
+    & .loader,
     & .breed-select {
       display: none;
     }
