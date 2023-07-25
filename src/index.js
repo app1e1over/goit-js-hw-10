@@ -30,11 +30,11 @@ function showError(){
 
 hideError();
 breedSelect.classList.add('hidden');
-console.log("var 2");
+console.log("var 3");
 fetchBreeds()
   .then(c => {
     console.log(c);
-    for (val of c) {
+    for (let val of c) {
       let op = document.createElement('option');
 
       op.value = val.id;
