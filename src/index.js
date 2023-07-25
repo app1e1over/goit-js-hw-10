@@ -30,6 +30,7 @@ function showError(){
 
 hideError();
 breedSelect.classList.add('hidden');
+console.log("var 1");
 fetchBreeds()
   .then(c => {
     for (val of c) {
@@ -42,6 +43,7 @@ fetchBreeds()
     }
   })
   .then(() => {
+    console.log("breeds succes");
     breedSelect.classList.remove('hidden');
     new SlimSelect({
       select: "#single",
